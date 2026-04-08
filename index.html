@@ -231,7 +231,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
 .footer-bar a{color:var(--sage-light);text-decoration:none;}
 
 /* CMS FAB */
-.cms-fab{position:fixed;bottom:32px;right:32px;z-index:999;background:var(--ink);color:#fff;width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;font-size:1rem;box-shadow:0 8px 32px rgba(0,0,0,.35);transition:all .25s;display:flex;align-items:center;justify-content:center;}
+.cms-fab{position:fixed;bottom:32px;right:32px;z-index:999;background:var(--ink);color:#fff;width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;font-size:1rem;box-shadow:0 8px 32px rgba(0,0,0,.35);transition:all .25s;display:none;align-items:center;justify-content:center;}
 .cms-fab:hover{background:var(--sage-dark);transform:scale(1.08);}
 
 /* CMS MODAL */
@@ -905,6 +905,15 @@ window.addEventListener('message', function(e) {
 });
 
 // ─── INIT ────────────────────────────────────────────
+// ─── CMS HOTKEY (Ctrl+J) ─────────────────────────
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && e.key === 'j') {
+    e.preventDefault();
+    const fab = document.querySelector('.cms-fab');
+    fab.style.display = fab.style.display === 'flex' ? 'none' : 'flex';
+  }
+});
+
 renderSite(getSiteData());
 </script>
 </body>
