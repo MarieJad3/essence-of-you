@@ -455,7 +455,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
 </div>
 
 <!-- CMS BUTTON -->
-<button class="cms-fab" onclick="openCMS()" title="Edit Site" style="display: flex;">✏️</button>
+<button class="cms-fab" onclick="openCMS()" title="Edit Site" style="display: none;">✏️</button>
 
 <!-- CMS OVERLAY -->
 <div class="cms-overlay" id="cmsOverlay">
@@ -616,7 +616,6 @@ nav ul li:last-child a:hover{background:var(--sage);}
 </div><!-- /cms-overlay -->
 
 <script>
-// ─── PASSWORD (SHA-256 of "ALongKissGoodnight") ───────────────────────────
 const PW_HASH = '13066fd274c7229bfe9852c06b95ae552de4d7bdd3afaf4d125da50354064ceb';
 
 // ─── LOAD SITE DATA from embedded JSON block ─────────────────────────────
@@ -926,7 +925,6 @@ window.addEventListener('message', function(e) {
 });
 
 // ─── INIT ────────────────────────────────────────────
-// ─── CMS HOTKEY (Ctrl+J) ─────────────────────────
 document.addEventListener('keydown', function(e) {
   if (e.ctrlKey && e.key === 'j') {
     e.preventDefault();
