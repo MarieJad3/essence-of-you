@@ -38,7 +38,7 @@
   "aboutPhotoCaption": "Dr. Alisha Diggs, LPC-S — Licensed Professional Counselor-Supervisor",
   "aboutBody": "Welcome to a space designed for your rest, your healing, and your highest self. After 15 years of experience, while being a wife, mother, and a higher ed therapist and educator, I know how first hand how stress can show up in our body, emotions, reactions, and thoughts. That's why I believe therapy should feel less like a clinical appointment and more like the long-awaited exhale you’ve been denying yourself. For the individuals navigating the weight of \"doing it all,\" I offer a soft place to land for when things get heavy. For couples who feel worlds apart, I will help you strip away the outside distractions to find the understanding, intimacy, and closeness you've been missing. We don't just solve problems here; we curate the life and love you deserve in a celebratory and affirming way, where your identity is honored, not just \"included\".",
   "focusAreas": [
-    "Dedicated to healing family wounds to build a healthier emotional legacy for yourself.",
+    "Are dedicated to healing family wounds to build a healthier emotional legacy for yourself.",
     "Would like to shift from self-sabotage to self-reinvention.",
     "Are navigating high-pressure careers, the 'strong person' persona, and performance fatigue.",
     "Want to shift from burnout and people-pleasing to intentional inner peace and boundaries.",
@@ -341,7 +341,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
       <span id="nav-tagline">Louisiana Teletherapy · Supervision · Consultation · Nationwide Coaching</span>
     </div>
   </div>
-  <div class="hero-left fade-in visible">
+  <div class="hero-left fade-in">
     <div>
       <p class="hero-kicker" id="hero-eyebrow">Mental Health &amp; Wellness</p>
       <blockquote class="hero-pull-quote" id="hero-pull-quote">A sanctuary for the 'strong' to be soft, and for your true essence to finally be seen.</blockquote>
@@ -378,15 +378,15 @@ nav ul li:last-child a:hover{background:var(--sage);}
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="about-left fade-in">
+  <div class="about-left fade-in visible">
     <p class="section-kicker">About Us</p>
     <h2 class="section-headline" id="about-name">Dr. Alisha Diggs, <em>LPC-S</em></h2>
     <p class="body-text drop-cap" id="about-body">Welcome to a space designed for your rest, your healing, and your highest self. After 15 years of experience, while being a wife, mother, and a higher ed therapist and educator, I know how first hand how stress can show up in our body, emotions, reactions, and thoughts. That's why I believe therapy should feel less like a clinical appointment and more like the long-awaited exhale you’ve been denying yourself. For the individuals navigating the weight of "doing it all," I offer a soft place to land for when things get heavy. For couples who feel worlds apart, I will help you strip away the outside distractions to find the understanding, intimacy, and closeness you've been missing. We don't just solve problems here; we curate the life and love you deserve in a celebratory and affirming way, where your identity is honored, not just "included".</p>
     <p class="section-kicker" style="margin-top:36px">YOU MAY BE HERE BECAUSE YOU...</p>
-    <div class="focus-columns" id="focus-grid"><div class="focus-item">Dedicated to healing family wounds to build a healthier emotional legacy for yourself.</div><div class="focus-item">Would like to shift from self-sabotage to self-reinvention.</div><div class="focus-item">Are navigating high-pressure careers, the 'strong person' persona, and performance fatigue.</div><div class="focus-item">Want to shift from burnout and people-pleasing to intentional inner peace and boundaries.</div><div class="focus-item">Looking to move beyond not feeling good enough or imposter syndrome.</div><div class="focus-item">Need support navigating the unique dynamics of non-monogamy, polyamory, and open dynamics.</div><div class="focus-item">Would like to deepen connection and communication in all types of relationships.</div><div class="focus-item">Are navigating vulnerability, commitment, and shared visions for the future.</div></div>
+    <div class="focus-columns" id="focus-grid"><div class="focus-item">Are dedicated to healing family wounds to build a healthier emotional legacy for yourself.</div><div class="focus-item">Would like to shift from self-sabotage to self-reinvention.</div><div class="focus-item">Are navigating high-pressure careers, the 'strong person' persona, and performance fatigue.</div><div class="focus-item">Want to shift from burnout and people-pleasing to intentional inner peace and boundaries.</div><div class="focus-item">Looking to move beyond not feeling good enough or imposter syndrome.</div><div class="focus-item">Need support navigating the unique dynamics of non-monogamy, polyamory, and open dynamics.</div><div class="focus-item">Would like to deepen connection and communication in all types of relationships.</div><div class="focus-item">Are navigating vulnerability, commitment, and shared visions for the future.</div></div>
   </div>
   <div class="about-center-rule"></div>
-  <div class="about-right fade-in">
+  <div class="about-right fade-in visible">
     <div class="about-img-wrap">
       <!-- Replace about.jpg in your repo root to update this image -->
       <div class="about-img-placeholder"></div>
@@ -398,7 +398,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
 
 <!-- SERVICES -->
 <section id="Services">
-  <div class="services-top fade-in">
+  <div class="services-top fade-in visible">
     <h2 class="services-hed" id="services-title">Services <em>&amp;</em> Rates</h2>
     <p class="services-intro-text" id="services-intro">Our 100% teletherapy services accepts BCBS, Aetna, Cigna, Optum, United Healthcare and private pay clients. We are also happy to provide detailed bills for out-of-network reimbursement.</p>
   </div>
@@ -485,9 +485,9 @@ nav ul li:last-child a:hover{background:var(--sage);}
     <!-- CMS BODY -->
     <div class="cms-body" id="cmsBody" style="display: flex;">
       <div class="cms-tabs">
-        <button class="cms-tab active" onclick="switchTab(event,'general')">General</button>
+        <button class="cms-tab" onclick="switchTab(event,'general')">General</button>
         <button class="cms-tab" onclick="switchTab(event,'hero')">Hero</button>
-        <button class="cms-tab" onclick="switchTab(event,'about')">About</button>
+        <button class="cms-tab active" onclick="switchTab(event,'about')">About</button>
         <button class="cms-tab" onclick="switchTab(event,'services')">Services</button>
         <button class="cms-tab" onclick="switchTab(event,'contact')">Contact</button>
         <button class="cms-tab" onclick="switchTab(event,'images')">Images</button>
@@ -495,7 +495,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
       <div class="cms-content">
 
         <!-- GENERAL -->
-        <div class="cms-section active" id="tab-general">
+        <div class="cms-section" id="tab-general">
           <div class="export-banner">
             <strong>How saving works:</strong>
             Edit any field and click <em>Apply</em> to preview changes live on the page. When you're done, click <strong>⬇ Export &amp; Download HTML</strong> at the top, then commit the downloaded <code>index.html</code> to your GitHub repo.
@@ -521,7 +521,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
         </div>
 
         <!-- ABOUT -->
-        <div class="cms-section" id="tab-about">
+        <div class="cms-section active" id="tab-about">
           <div class="cms-field"><label>Therapist Name / Credentials</label><input type="text" id="cms-aboutName"></div>
           <div class="cms-field"><label>Photo Caption</label><input type="text" id="cms-aboutPhotoCaption"></div>
           <div class="cms-field"><label>Bio / About Text</label><textarea id="cms-aboutBody" rows="7"></textarea></div>
@@ -929,13 +929,14 @@ document.addEventListener('keydown', function(e) {
   if (e.ctrlKey && e.key === 'j') {
     e.preventDefault();
     const fab = document.querySelector('.cms-fab');
-    const isVisible = fab.style.display === 'flex';
+    const isVisible = fab.style.display === 'none';
     fab.style.display = isVisible ? 'none' : 'flex';
   }
 });
 
 renderSite(getSiteData());
 </script>
+
 
 
 
