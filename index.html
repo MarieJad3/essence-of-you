@@ -455,7 +455,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
 </div>
 
 <!-- CMS BUTTON -->
-<button class="cms-fab" onclick="openCMS()" title="Edit Site" style="display: flex;">✏️</button>
+<button class="cms-fab" onclick="openCMS()" title="Edit Site" style="display: none;">✏️</button>
 
 <!-- CMS OVERLAY -->
 <div class="cms-overlay" id="cmsOverlay">
@@ -929,7 +929,7 @@ document.addEventListener('keydown', function(e) {
   if (e.ctrlKey && e.key === 'j') {
     e.preventDefault();
     const fab = document.querySelector('.cms-fab');
-    const isVisible = fab.style.display === 'none';
+    const isVisible = fab.style.display === 'flex';
     fab.style.display = isVisible ? 'none' : 'flex';
   }
 });
