@@ -145,7 +145,7 @@ nav ul li:last-child a:hover{background:var(--sage);}
 .hero-stat .lbl{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:block;margin-top:2px;}
 .hero-right{grid-column:3;grid-row:2;position:relative;overflow:hidden;background:var(--sage-light);min-height:70vh;}
 .hero-img-placeholder{position:absolute;inset:0;width:100%;height:100%;background:linear-gradient(160deg,var(--sage-light) 0%,var(--sage) 60%,var(--sage-dark) 100%);}
-.hero-img-overlay{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;display:block;opacity:1;transition:opacity .3s;}
+.hero-img-overlay{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:1;transition:opacity .3s;}
 
 .hero-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(26,23,20,.7));padding:40px 28px 24px;color:#fff;}
 .hero-caption p{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;opacity:.75;}
@@ -290,20 +290,31 @@ nav ul li:last-child a:hover{background:var(--sage);}
 
 /* RESPONSIVE */
 @media(max-width:960px){
-  #home{grid-template-columns:1fr;}
+  #home{grid-template-columns:1fr;grid-template-rows:auto auto auto;}
+  .hero-masthead{grid-column:1;grid-row:1;}
   .hero-divider{display:none;}
-  .hero-right{min-height:55vw;}
+  /* Reset explicit grid positions so hero-left and hero-right stack vertically */
+  .hero-left{grid-column:1;grid-row:2;min-height:unset;padding:32px 5% 40px;}
+  .hero-right{grid-column:1;grid-row:3;aspect-ratio:3/4;min-height:unset;}
+  /* Prevent implicit off-screen columns from hiding images */
+  #home{grid-auto-columns:0;overflow:hidden;}
+
   #about{grid-template-columns:1fr;gap:0;}
   .about-center-rule{display:none;}
   .about-left{padding:0 0 40px;}
   .about-right{padding:0;}
+
+
   .services-top{grid-template-columns:1fr;gap:24px;}
   .services-grid{grid-template-columns:1fr;}
-  
   .service-col{padding:0 0 40px;}
   .service-col-right{padding-left:0;}
+
   .mission-spread{grid-template-columns:1fr;}
-  .mission-img-side{min-height:50vw;}
+  .mission-img-side{min-height:60vw;}
+  /* Ensure mission image fills its container on mobile */
+  .mission-img-side img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+
   #footer{grid-template-columns:1fr;}
   .contact-divider{display:none;}
   .contact-left{padding:0 0 40px;}
