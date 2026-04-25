@@ -1,0 +1,22 @@
+{
+  "name": "Essence of You Counseling & Consulting",
+  "short_name": "Essence of You",
+  "description": "Culturally affirming teletherapy, couples counseling, supervision, and coaching by Dr. Alisha Diggs, LPC-S.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f4ef",
+  "theme_color": "#3e5c41",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
